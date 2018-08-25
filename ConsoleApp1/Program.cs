@@ -8,6 +8,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            FileProcessing.CheckFileCount();
+            string[] files = System.IO.Directory.GetFiles(@"C:\");
+            int fileCounter = 0;
+            for (int i = 0; i < files.Length; i++)
+            {
+
+                if (files.Contains(""))
+                {
+                    fileCounter++;
+                }
+            }
             int[] a = { 1, 2, 3 };
             int[] b = { 4, 5, 6, 7 };
             int[] duplicateArr = { 1, 2, 5, 6, 7, 2, 1, 9, 5 };
